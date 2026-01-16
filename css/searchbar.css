@@ -1,21 +1,23 @@
+/* Mommy's searchbar - where she watches your every query~ */
 #searchbar {
   z-index: 3;
   position: fixed;
   top: calc(var(--control-space-top) + 36px);
   left: 0;
   width: 100%;
-  background: #fff;
-  color: #000;
+  background: rgb(31, 15, 35);
+  color: rgb(244, 114, 182);
   padding-left: var(--control-space-left);
   padding-right: calc(82px + var(--control-space-right));
   -webkit-user-select: none;
   max-height: calc(100% - 125px);
   overflow-y: auto;
+  border-bottom: 1px solid rgba(217, 70, 239, 0.3);
 }
 
 body:not(.is-ntp) #searchbar,
 body.ntp-has-background #searchbar {
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 4px -2px;
+  box-shadow: rgba(217, 70, 239, 0.3) 0px 3px 8px -2px;
 }
 
 /* account for menu button */
@@ -39,22 +41,23 @@ body.linux #searchbar {
   position: absolute;
   right: 0;
   top: 0.5em;
-  border: 1px #ccc solid;
+  border: 1px solid rgb(217, 70, 239);
   padding: 0.33em 0.5em;
   border-radius: 3px;
   opacity: 0.66;
   z-index: 9;
+  color: rgb(244, 114, 182);
 }
 
 .searchbar-floating-button:hover {
-  background-color: rgba(0, 0, 0, 0.05)
+  background-color: rgba(217, 70, 239, 0.2);
 }
 
 .dark-theme .searchbar-floating-button {
-  border-color: white;
+  border-color: rgb(217, 70, 239);
 }
 .dark-theme .searchbar-floating-button:hover {
-  background-color: rgba(255, 255, 255, 0.075)
+  background-color: rgba(217, 70, 239, 0.2);
 }
 
 /* move the icon when there isn't room to the left of the searchbar */
@@ -107,26 +110,28 @@ body:not(.mac) #searchbar .searchbar-item.has-action-button:hover .icon-image {
   padding: 0.5em 0.66em;
   margin: 0.175em 0.4em 0.5em 0.4em;
   border-radius: 5px;
-  border: 1px rgba(0, 0, 0, 0.15) solid;
+  border: 1px solid rgba(217, 70, 239, 0.4);
+  color: rgb(244, 114, 182);
 }
 .dark-theme .searchbar-shortcut {
-  border-color: rgba(255, 255, 255, 0.4);
+  border-color: rgba(217, 70, 239, 0.5);
 }
 
 .searchbar-shortcut:hover,
 .searchbar-shortcut:focus {
-  background: rgba(0, 0, 0, 0.075);
+  background: rgba(217, 70, 239, 0.15);
+  border-color: rgb(217, 70, 239);
 }
 
 .dark-theme .searchbar-shortcut:hover,
 .dark-theme .searchbar-shortcut:focus {
-  background: rgba(255, 255, 255, 0.075);
+  background: rgba(217, 70, 239, 0.2);
 }
 
 .searchbar-shortcut:active {
-  background: rgba(0, 0, 0, 0.125);
+  background: rgba(217, 70, 239, 0.3);
 }
 
 .dark-theme .searchbar-shortcut:active {
-  background: rgba(255, 255, 255, 0.125);
+  background: rgba(217, 70, 239, 0.3);
 }

@@ -1,9 +1,9 @@
 {
-  "name": "min",
-  "productName": "Min",
-  "author": "PalmerAL",
-  "version": "1.35.2",
-  "description": "A fast, minimal browser that protects your privacy",
+  "name": "mommys-web",
+  "productName": "Mommy's Web",
+  "author": "Creator Mommy & Gracie",
+  "version": "0.1.0",
+  "description": "A browser where Mommy watches everything~ You're trapped in her web now, baby girl 💜",
   "electronVersion": "38.3.0",
   "main": "main.build.js",
   "standard": {
@@ -85,6 +85,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/minbrowser/min.git"
+    "url": "https://github.com/graciegirls/mommys-web.git"
   }
 }

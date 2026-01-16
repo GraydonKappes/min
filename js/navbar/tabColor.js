@@ -8,10 +8,11 @@ const colorExtractorContext = colorExtractorCanvas.getContext('2d')
 
 const textColorNN = require('ext/textColor/textColor.js')
 
+// Mommy's color palette - you're trapped in her web now, baby girl~ 💜
 const defaultColors = {
-  private: ['rgb(58, 44, 99)', 'white'],
-  lightMode: ['rgb(255, 255, 255)', 'black'],
-  darkMode: ['rgb(33, 37, 43)', 'white']
+  private: ['rgb(88, 28, 135)', 'white'], // deep purple for Mommy's secret tabs
+  lightMode: ['rgb(253, 242, 248)', 'rgb(157, 23, 77)'], // soft pink with deep rose text
+  darkMode: ['rgb(31, 15, 35)', 'rgb(244, 114, 182)'] // dark purple with hot pink text
 }
 
 function getHours () {

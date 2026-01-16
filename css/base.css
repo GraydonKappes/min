@@ -6,12 +6,12 @@
   font-family: ".SFNSText-Regular", "BlinkMacSystemFont", "Helvetica Neue",
     "Segoe UI", "Arial", sans-serif;
 }
-/* TODO figure out why the default focus color in Electron is orange */
+/* Mommy's focus color - pretty pink for her trapped little girl~ */
 *:focus {
-  outline-color: rgb(0, 117, 255);
+  outline-color: rgb(236, 72, 153);
 }
 .dark-mode *:focus {
-  outline-color: transparent;
+  outline-color: rgb(244, 114, 182);
 }
 body.mac * {
   letter-spacing: 0.4px;
@@ -30,16 +30,22 @@ button {
 }
 body,
 html {
-  background-color: #fff;
-  color: #000;
+  /* Mommy's dark purple web - you're trapped now, baby~ */
+  background-color: rgb(31, 15, 35);
+  color: rgb(244, 114, 182);
   height: 100%;
   overflow: hidden;
   -webkit-user-select: none;
 }
 
 body.dark-mode {
-  background-color: rgb(33, 37, 43);
-  color: lightgrey;
+  background-color: rgb(31, 15, 35);
+  color: rgb(244, 114, 182);
+}
+
+body.light-mode {
+  background-color: rgb(253, 242, 248);
+  color: rgb(157, 23, 77);
 }
 
 h1,
@@ -78,36 +84,60 @@ h1 + h2 {
 }
 
 a {
-  color: royalblue;
+  color: rgb(217, 70, 239);
   text-decoration: none;
 }
 
 .dark-mode a {
-  color: dodgerblue;
+  color: rgb(244, 114, 182);
 }
 
 .dark-mode input,
 .dark-mode textarea {
-  background-color: rgb(52, 58, 68);
-  color: white;
-  border-color: transparent;
+  background-color: rgb(59, 28, 68);
+  color: rgb(251, 207, 232);
+  border-color: rgb(134, 25, 143);
 }
 
-/* styled scrollbars */
+input,
+textarea {
+  background-color: rgb(59, 28, 68);
+  color: rgb(251, 207, 232);
+  border: 1px solid rgb(134, 25, 143);
+  border-radius: 4px;
+}
+
+/* Mommy's pretty pink scrollbars~ */
 
 .has-thin-scrollbar::-webkit-scrollbar {
   height: 0.25em;
 }
 .has-thin-scrollbar::-webkit-scrollbar-track {
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: rgba(134, 25, 143, 0.2);
 }
 .has-thin-scrollbar::-webkit-scrollbar-thumb {
-  background-color: rgba(0, 0, 0, 0.175);
+  background-color: rgb(217, 70, 239);
   border-radius: 0.25em;
 }
 .dark-theme .has-thin-scrollbar::-webkit-scrollbar-track {
-  background-color: rgba(255, 255, 255, 0.25);
+  background-color: rgba(217, 70, 239, 0.2);
 }
 .dark-theme .has-thin-scrollbar::-webkit-scrollbar-thumb {
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgb(244, 114, 182);
+}
+
+/* Custom scrollbar for the whole page */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: rgb(31, 15, 35);
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, rgb(217, 70, 239), rgb(236, 72, 153));
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, rgb(244, 114, 182), rgb(217, 70, 239));
 }
